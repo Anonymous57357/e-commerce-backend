@@ -7,6 +7,8 @@ const session = require("express-session");
 const connectDB = require("./config/db");
 
 const userRouter = require("./routes/userRoutes");
+const productRoutes = require("./routes/productRoutes");
+
 
 const app = express();
 
@@ -23,7 +25,7 @@ app.use(
 );
 // Routes
 app.use("/api/users", userRouter);
-// app.use("/api/products", require("./routes/productRoutes"));
+app.use("/api/products", productRoutes);
 
 const PORT = process.env.PORT || 5000;
 
