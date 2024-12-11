@@ -49,3 +49,16 @@ e-commerce-backend/
 To start the server:
 ```bash
 node app.js
+
+# Step 2: User Management
+
+## Objective
+Implement user registration, login, and logout using session-based authentication.
+
+## Steps
+
+### 1. Install Dependencies
+Install bcrypt for secure password hashing:
+```bash
+npm install bcrypt
+
